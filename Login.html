@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="Login.css">
+</head>
+<body>
+    <div class="mdiv ">
+        <div class="img">
+
+        </div>
+        <div class="content slide-in-blurred-top">
+            <img src="products/logo.png" alt="">
+            <div class="heading">
+                <h1 align="center">LOGIN</h1>
+            </div>
+            <div class="forms" >
+                <form action="" method="" >
+                    <input type="text" name="username" placeholder="USERNAME" id="un" style="color: aliceblue;">
+                    <input type="password" name="password" placeholder="PASSWORD" id="psw">
+                    <input type="button" name="Login" value="login" id="btn" onclick="submitForm()">
+                    <p class="links"><a href="#">Creat Account</a></p>
+                    <p class="links"><a href="#" >Forgot Password</a></p>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        let un1 = "Safari";
+        let psw1 ="Safari@123";
+        function submitForm() {
+            let un2 = document.getElementById("un").value;
+            let psw2 = document.getElementById("psw").value;
+            
+            if (un1 == un2 && psw1 == psw2){
+                open("index.html");
+            }
+            else {
+                alert("Incurrect Credentials");
+            }
+        }        
+    </script>
+</body>
+</html>
